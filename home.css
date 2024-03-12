@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(241,246,255,255);
+}
+
+.navbar{
+    background-color: rgba(75,26,158,255) !important;
+    padding:20px !important;
+    /* color:white !important; */
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.navbar-brand{
+    color:white !important;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./updatesearch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">       
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+            rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <section>
+        <div class="container-fluid color">
+            <nav class="navbar pt-3">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="./Image/BLogo.png" alt="Logo" width="30" height="24" class="align-text-top">
+                    TBA
+                  </a>
+                  <div class="d-flex" role="search">
+                    <input class="form-control" type="search" style="width: 400px;" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+
+                  <div>
+                    <button class="btn btn-outline-light me-2" type="button"><i class="fa-solid fa-user me-2"></i>Login</button>
+                    <button class="btn btn-outline-light me-2" type="button">SignUp</button>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="destination py-3">
+                <div class="place">
+                    <p><i class="fa-solid fa-location-dot me-2"></i>Destination</p>
+                    <select id="dropdown">
+                        <option value="">--Select--.</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                        <option value="item4">Item 4</option>
+                      </select>
+                </div>
+                <div class="place">
+                    <p><i class="fa-solid fa-location-dot me-2"></i>Check In</p>
+                    <select id="dropdown">
+                        <option value="">--Select--.</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                        <option value="item4">Item 4</option>
+                      </select>
+                </div>
+                <div class="place">
+                    <p><i class="fa-solid fa-location-dot me-2"></i>Check Out</p>
+                    <select id="dropdown">
+                        <option value="">--Select--.</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                        <option value="item4">Item 4</option>
+                      </select>
+                </div>
+                <div class="place">
+                    <p><i class="fa-solid fa-location-dot me-2"></i>Rooms & Guests</p>
+                    <select id="dropdown">
+                        <option value="">--Select--.</option>
+                        <option value="item1">Room</option>
+                        <option value="item2">-</option>
+                        <option value="item3">+</option>
+                        <option value="item4">Item 4</option>
+                      </select>
+                </div>
+                <div>
+                    <button class="btn find-price" type="button">Update Search</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ----Sort By---- -->
+
+<section>
+    <div class="container">
+        <div class="row p-3">
+           <div class="col-md-3 bg-white filter">
+                <div class="p-3">
+                    <h4>Filter by</h4>
+                    <p>Range</p>
+                    <hr>
+                    <p>Star rating</p>
+                    
+                        <!-- <div class="star-rating"> -->
+                            <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-around" id="pills-tab" role="tablist">
+                                
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active star-rating px-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            <i class="fa-solid fa-location-dot"></i> <2</button>
+                                    </li>
+                                
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link star-rating px-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            <i class="fa-solid fa-location-dot"></i> <2</button>
+                                    </li>
+                                
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link star-rating px-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            <i class="fa-solid fa-location-dot"></i> <2</button>
+                                    </li>
+                                
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link star-rating px-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            <i class="fa-solid fa-location-dot"></i> <2</button>
+                                    </li>
+                                
+                            </ul>
+                            
+                        <!-- </div> -->
+                
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12 sort">
+                        <div class="bg-white">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <button class="ms-2 me-4">SortBy</button>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link active me-4 recommended" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Recommended</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link me-4 recommended" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cheapest</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                      <!-- <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                      </div> -->
+                    
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-md-6 sort">
+                        <div class="d-flex offer" >
+                        
+                            <div class="me-3 offer-img">
+                                <img src="./Image/portfolio-7.jpg" alt="" width="170px">
+                            </div>
+    
+                            <div class="line">
+                                <div class="rating">
+                                    <p class="pt-1">Disney Room</p>
+                                    <p class="star"><i class="fa-solid fa-location-dot me-1"></i>4.8</p>
+                                </div>
+                                <div>
+                                    <p><i class="fa-solid fa-location-dot me-2"></i>Kerala</p>
+                                </div>
+    
+                                <div class="offer-calender">
+                                    <p class="col-offer">10% off</p>
+                                    <div class="calender">
+                                        <p class="text-align-left span-icon"> <i class="fa-solid fa-location-dot"></i> Oct 05 - 09</p>
+                                        <p><span class="span-off me-1"><strike>$7,630</strike></span><b>$6,7200</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>         
+
+        </div>
+     
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

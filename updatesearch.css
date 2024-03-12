@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgba(241,246,255,255);
+    background-color: rgba(241,246,255,255) !important;
 }
 
 .color{
@@ -12,7 +12,7 @@ body{
 }
 
 .navbar{
-    padding-bottom: 70px;
+    padding-bottom: 70px !important;
 }
 
 .navbar-brand{
@@ -53,43 +53,65 @@ body{
 }
 
 .find-price{
-    color:white;
-    background-color: rgba(75,26,158,255);
-}
-
-.find-price:hover{
-    color:black;
-    border: 2px solid rgba(75,26,158,255);
-    background-color: white;
-}
-
-
-/* =======Popular Resort======= */
-
-.popular{
-    font-weight: bold;
-}
-
-.view-all{
-    color: rgba(75,26,158,255);
-}
-
-.owl-theme{
-    margin-top: -20px !important;
-}
-
-.owl-dot span{
-    background-color: white !important;
-    border:1px solid rgba(75,26,158,255);
-}
-
-.owl-dots .active span{
+    color:white !important;
     background-color: rgba(75,26,158,255) !important;
 }
 
+.find-price:hover{
+    color:black !important;
+    border: 2px solid rgba(75,26,158,255) !important;
+    background-color: white !important;
+}
 
-/*------Best Offer---------*/
+/* ========Filter By=========  */
 
+/* .star{
+    border-radius: 5px;
+    border: none;
+    padding:3px 5px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 255, 0.24);
+} */
+
+.filter{
+    border-radius: 10px;
+}
+
+.star-rating{
+    padding: 0 1px!important;
+    font-size: 15px !important;
+}
+
+.nav-pills{
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.nav-pills button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.recommended{
+    border-radius: 100px !important;
+    padding: 3px 10px !important;
+}
+
+.nav-link{
+    border:1px solid rgba(75,26,158,255) !important;
+}
+
+.sort{
+    padding-right: 0 !important;
+}
+
+.sort .bg-white{
+    border-radius: 10px;
+    padding: 10px !important;
+}
+
+/*  */
 .row{
     margin-right: 0;
     margin-left: 0;
